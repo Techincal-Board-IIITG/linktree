@@ -70,7 +70,7 @@ green
 yellow
 ```
 
-You can add more colors through `theme.js` and `style.css`.
+You can add more colors by defining a CSS variable and accent class in `style.css`.
 
 ## Changing the Theme
 
@@ -103,16 +103,16 @@ terminal: {
 }
 ```
 
-And the complete color palette:
+Colors are managed in `style.css`, inside the `:root` block:
 
-```js
-colors: {
-    background: "#09090b",
-    panel: "#0c0c0f",
-    text: "#eeeeee",
-    muted: "#92929e",
-    border: "#36363e",
-    accent: "#a866ff"
+```css
+:root {
+  --background: #1e1e2e;
+  --panel: #181825;
+  --text: #cdd6f4;
+  --muted: #a6adc8;
+  --border: #45475a;
+  --accent: #cba6f7;
 }
 ```
 
@@ -121,7 +121,7 @@ colors: {
 Each link uses a normal image file.
 
 ```js
-icon: "assets/github.png"
+icon: "assets/github.png";
 ```
 
 PNG, WebP and other browser-supported image formats can be used.
@@ -129,7 +129,7 @@ PNG, WebP and other browser-supported image formats can be used.
 The displayed size can be changed individually:
 
 ```js
-iconSize: 42
+iconSize: 42;
 ```
 
 For the best results, use images with minimal transparent padding around the actual logo.
@@ -207,7 +207,7 @@ config/theme.js
         │
         ├── Site Information
         ├── Terminal Information
-        └── Color Palette
+    └── Effects
                 │
                 ▼
              Website

@@ -1,162 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>IIITG // Links</title>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
+  <body>
     <div class="scanlines"></div>
 
     <main class="container">
+      <header class="terminal-bar">
+        <div class="terminal-prompt">
+          <span class="prompt-symbol"> ❯ </span>
 
-        <header class="terminal-bar">
+          <span id="terminal-user"></span>
 
-            <div class="terminal-prompt">
+          <span id="terminal-command"></span>
 
-                <span class="prompt-symbol">
-                    ❯
-                </span>
+          <span class="cursor"></span>
+        </div>
 
-                <span id="terminal-user"></span>
+        <div class="terminal-meta"></div>
+      </header>
 
-                <span id="terminal-command"></span>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="small-label">WELCOME TO</div>
 
-                <span class="cursor"></span>
+          <h1>
+            <span id="site-title"></span>
 
-            </div>
+            <span class="accent"> / </span>
 
-            <div class="terminal-meta">
+            <br />
 
-                <span id="terminal-name"></span>
+            <span id="site-title-accent"></span>
+          </h1>
 
-                <span>|</span>
+          <p class="hero-tagline" id="site-tagline"></p>
 
-                <span>LINKS</span>
+          <div class="hero-divider"></div>
 
-                <span>|</span>
+          <p class="hero-description" id="hero-description"></p>
+        </div>
 
-                <span id="terminal-version"></span>
+        <div class="hero-kitty">
+          <img src="assets/kitty.png" alt="Kitty logo" />
+        </div>
+      </section>
 
-                <span class="status-dot"></span>
-
-            </div>
-
-        </header>
-
-
-        <section class="hero">
-
-            <div class="logo-column">
-
-                <div class="logo-box">
-
-                    <div class="corner corner-tl"></div>
-                    <div class="corner corner-tr"></div>
-                    <div class="corner corner-bl"></div>
-                    <div class="corner corner-br"></div>
-
-                    <div
-                        class="logo-text"
-                        id="logo-name"
-                    ></div>
-
-                    <div
-                        class="logo-subtitle"
-                        id="logo-subtitle"
-                    ></div>
-
-                </div>
-
-
-                <div class="terminal-description">
-
-                    <span class="description-symbol">
-                        &gt;
-                    </span>
-
-                    <p id="site-description"></p>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-content">
-
-                <div class="small-label">
-                    WELCOME TO
-                </div>
-
-                <h1>
-
-                    <span id="site-title"></span>
-
-                    <span class="accent">
-                        /
-                    </span>
-
-                    <br>
-
-                    <span id="site-title-accent"></span>
-
-                </h1>
-
-
-                <p
-                    class="hero-tagline"
-                    id="site-tagline"
-                ></p>
-
-
-                <div class="hero-divider"></div>
-
-
-                <p
-                    class="hero-description"
-                    id="hero-description"
-                ></p>
-
-            </div>
-
-        </section>
-
-
-        <section
-            class="links-section"
-            id="links"
-        ></section>
-
+      <section class="links-section" id="links"></section>
     </main>
-
 
     <script src="config/theme.js"></script>
 
@@ -165,7 +73,5 @@
     <script src="config/icons.js"></script>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
